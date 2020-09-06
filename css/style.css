@@ -73,3 +73,14 @@ h1 {
     border-radius: 10px;
     width: 75px;
 }
+
+
+.image-div {
+    width: 150px;
+    margin: 20px;
+}
+
+.image-div img{
+    max-width: 100%;
+    height: auto;
+}
