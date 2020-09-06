@@ -27,10 +27,13 @@ const getSearchResults = (query) => {
                 imageDiv.classList.add('image-div');
 
                 const contentDiv = document.createElement('div');
+                contentDiv.classList.add('result-content');
 
                 const movieTitle = document.createElement('h2');
                 movieTitle.innerText = item.title;
 
+                const releaseDate = document.createElement('p');
+                releaseDate.innerText = `Release Date: ${item.release_date}`;
                 const image = document.createElement('img');
                 let posterPathUrl;
                 if (item.poster_path) {
@@ -41,6 +44,7 @@ const getSearchResults = (query) => {
                 movieResult.appendChild(contentDiv);
                 displaySection.appendChild(movieResult);
                 contentDiv.appendChild(movieTitle);
+                contentDiv.appendChild(releaseDate);
 
 
 
