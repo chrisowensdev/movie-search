@@ -1,7 +1,14 @@
 'use strict';
 
 const displaySection = document.querySelector('.display-section');
+const searchButton = document.getElementById('search');
+const searchInput = document.getElementById('searchInput');
 
+
+searchButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    getSearchResults(searchInput.value);
+})
 
 
 
@@ -16,6 +23,7 @@ const get = (url) => {
 }
 
 const getSearchResults = (query) => {
+    displaySection.innerHTML = "";
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${API.key}&language=en-US&query=${query}`;
     get(url)
         .then(res => {
@@ -55,4 +63,4 @@ const getSearchResults = (query) => {
 }
 
 
-getSearchResults('clerks');
+//getSearchResults('clerks');
