@@ -7,6 +7,7 @@ const searchInput = document.getElementById('searchInput');
 
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();
+    displaySection.classList.add('show');
     getSearchResults(searchInput.value);
 })
 
