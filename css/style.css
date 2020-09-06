@@ -41,20 +41,20 @@ h1 {
 .marquee {
     background-color: #FC0;
     border: 3px solid #CC0000;
-    width: 400px;
-    text-align: center;
     margin: 20px auto;
     outline-style: dotted;
     outline-color: #FC0;
+    text-align: center;
+    width: 400px;
 }
 
 .search-bar {
-    height: 50px;
+    align-items: center;
     background-color: rgba(102, 0, 204, 0.521);
     border-radius: 20px;
     display: flex;
+    height: 50px;
     justify-content: center;
-    align-items: center;
     margin: 0 auto; 
     width: 500px;
 }
@@ -67,20 +67,37 @@ h1 {
 }
 
 .search-bar button {
-    padding: 5px;
     background-color: #FC0;
     border: none;
     border-radius: 10px;
+    padding: 5px;
     width: 75px;
 }
 
+/* Display Section */
 
-.image-div {
-    width: 150px;
-    margin: 20px;
+.display-section {
+    background-color: rgba(102, 0, 204, 0.521);
+    border-radius: 10px;
+    margin: 20px auto;  
+    padding: 10px;
+    width: 600px;
 }
+
+.movie-result {
+    background-color: #000;
+    margin: 10px 0;
+    display: flex;
+}
+
 
 .image-div img{
     max-width: 100%;
     height: auto;
+    margin: 10px; 
+}
+
+.display-section h2 {
+    color: white;
+    display: inline-block;
 }

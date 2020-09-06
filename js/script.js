@@ -20,20 +20,32 @@ const getSearchResults = (query) => {
     get(url)
         .then(res => {
             res.results.forEach(item => {
+                const movieResult = document.createElement('div');
+                movieResult.classList.add('movie-result');
+
                 const imageDiv = document.createElement('div');
                 imageDiv.classList.add('image-div');
+
+                const contentDiv = document.createElement('div');
+
+                const movieTitle = document.createElement('h2');
+                movieTitle.innerText = item.title;
+
                 const image = document.createElement('img');
                 let posterPathUrl;
                 if (item.poster_path) {
                     image.setAttribute('src', `http://image.tmdb.org/t/p/w185${item.poster_path}`);
                 }
                 imageDiv.appendChild(image);
-                displaySection.appendChild(imageDiv);
+                movieResult.appendChild(imageDiv);
+                movieResult.appendChild(contentDiv);
+                displaySection.appendChild(movieResult);
+                contentDiv.appendChild(movieTitle);
 
 
 
 
-                //console.log(item.title, item.release_date);
+                console.log(item);
             });
         })
 }
