@@ -1,0 +1,75 @@
+/* 
+COLOR SCHEME
+
+https://www.colorcombos.com/color-schemes/8/ColorCombo8.html
+
+#6600CC - Purple
+#FFCC00 - Yellow
+#000000 - Black
+#CC0000 - Red
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('../images/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Limelight', cursive;
+    text-transform: uppercase;
+}
+
+.marquee {
+    background-color: #FC0;
+    border: 3px solid #CC0000;
+    width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    outline-style: dotted;
+    outline-color: #FC0;
+}
+
+.search-bar {
+    height: 50px;
+    background-color: rgba(102, 0, 204, 0.521);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    width: 500px;
+}
+
+.input-section input {
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #FC0;
+    border: none;
+    border-radius: 10px;
+    width: 75px;
+}
