@@ -54,6 +54,10 @@ const getSearchResults = (query) => {
                 rating.classList.add('rating');
                 rating.innerHTML = ratingDisplay(item.vote_average);
 
+                const overview = document.createElement('p');
+                overview.classList.add('overview');
+                overview.innerText = item.overview;
+
 
                 imageDiv.appendChild(image);
                 movieResult.appendChild(imageDiv);
@@ -62,6 +66,7 @@ const getSearchResults = (query) => {
                 contentDiv.appendChild(movieTitle);
                 contentDiv.appendChild(releaseDate);
                 contentDiv.appendChild(rating);
+                contentDiv.appendChild(overview);
 
 
 
