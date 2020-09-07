@@ -131,3 +131,7 @@ h1 {
 .display-section p {
     margin: 0;
 }
+
+.rating i {
+    color: #FC0;
+}
