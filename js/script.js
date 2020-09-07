@@ -23,6 +23,9 @@ const get = (url) => {
         })
 }
 
+const API = {
+    key: '8e9e68e675109d8d5b715045048cb675',
+}
 const getSearchResults = (query) => {
     displaySection.innerHTML = "";
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${API.key}&language=en-US&query=${query}`;
